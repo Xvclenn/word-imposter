@@ -1,8 +1,11 @@
 # 🎭 Word Imposter
 
 **Word Imposter** is a fun social word game inspired by *Among Us*.  
-Each player receives a secret word — except one player, the **Imposter**, who gets a different word (or none at all).  
+Each player receives a secret word — except one player, the **Imposter**, who gets a different word (or none at all).
+
 Discuss, observe carefully, and figure out who the Imposter is!
+
+
 
 ---
 
@@ -10,40 +13,40 @@ Discuss, observe carefully, and figure out who the Imposter is!
 
 ### 🎮 Game Modes
 - **Local Mode** – Play on a single device by passing it around
-- **Online Mode** – (Planned for future development)
+- **Online Mode** – *(Planned for future development)*
 
 ### ✨ Highlights
-- 👥 Supports 3–10 players
+- 👥 Supports **3–10 players**
 - 🎯 Automatic role assignment (Imposter / Player)
 - 🎲 Random word selection
 - 🧠 Turn-based gameplay
 - 🌙 Dark / Light mode toggle
 - 📱 Fully responsive (mobile-friendly)
-- ✨ Smooth animations with Framer Motion
+- ✨ Smooth animations with **Framer Motion**
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Next.js 14 (App Router)**
-- **TypeScript**
-- **Tailwind CSS**
-- **Framer Motion**
-- **React Context API + Reducer**
-- **shadcn/ui**
+- **Next.js 14 (App Router)** – React framework with server-side rendering
+- **TypeScript** – Type-safe development
+- **Tailwind CSS** – Utility-first styling
+- **Framer Motion** – Smooth animations and transitions
+- **React Context API + Reducer** – State management
+- **shadcn/ui** – High-quality UI components
 
 ---
 
 ## 📁 Project Structure
 
-```bash
+```
 word-imposter/
 ├── public/                 # Static assets
 ├── src/
 │   ├── app/                # Next.js App Router
 │   │   ├── game/
 │   │   │   ├── local/      # Local game mode
-│   │   │   └── online/     # Online game mode
+│   │   │   └── online/     # Online game mode (coming soon)
 │   │   ├── layout.tsx
 │   │   ├── page.tsx
 │   │   └── globals.css
@@ -77,125 +80,179 @@ word-imposter/
 ├── next.config.ts
 ├── package.json
 └── README.md
+```
 
+---
 
-## ⚙️ Getting Started (Local Development)
+## ⚙️ Getting Started
 
-Follow these steps to run the project locally.
+### Prerequisites
+- Node.js 16+ and npm (or yarn/pnpm)
 
-### 1️⃣ Clone the repository
+### Installation
+
+**1. Clone the repository**
 ```bash
 git clone https://github.com/your-username/word-imposter.git
 cd word-imposter
+```
 
-### 2️⃣ Install dependencies
+**2. Install dependencies**
 ```bash
 npm install
+```
 
-### 3️⃣ Start the development server
+**3. Start the development server**
 ```bash
 npm run dev
+```
 
 Open your browser and visit:
-```bash
+```
 http://localhost:3000
+```
 
-### 3️⃣ Start the development server
+### Build for Production
 ```bash
-npm run dev
+npm run build
+npm run start
+```
 
+---
 
-🧠 Game Logic Overview
+## 🧠 How the Game Works
 
-assignRoles.ts
-Randomly assigns one Imposter and normal players.
+### Game Phases
 
-getRandomWord.ts
-Selects a random word from the word list.
+1. **Setup Phase** – Players are assigned roles (Imposter or Player)
+2. **Show Word Phase** – Each player sees their secret word privately
+3. **Play Phase** – Players discuss and take turns speaking
+4. **Voting Phase** – Players vote to eliminate the suspected Imposter
 
-GameContext + Reducer
-Manages global game state and phases:
+### Core Game Logic
 
-SETUP
+**assignRoles.ts**
+- Randomly selects one player as the Imposter
+- Assigns the remaining players as regular Players
 
-SHOW_WORD
+**getRandomWord.ts**
+- Selects a random word from the word list
+- Imposter may receive a different word or no word at all
 
-PLAY
+**GameContext + Reducer**
+- Manages global game state and phase transitions
+- Handles player turn management
+- Stores game configuration and results
 
-ShowWordScreen
-Shows the secret word privately to each player.
+**ShowWordScreen**
+- Displays the secret word to each player individually
+- Ensures privacy with clear handoff between turns
 
+---
 
-🎨 UI & Animations
+## 🎨 UI & Animations
 
-Framer Motion
+### Framer Motion
+- Smooth modal open/close animations
+- Interactive hover and tap effects
+- Elegant transitions between game phases
 
-Modal open / close animations
+### Tailwind CSS
+- Responsive design (mobile-first)
+- Gradient backgrounds for visual appeal
+- Dark/Light theme support with theme toggle
 
-Hover & tap effects
+### Dark Mode
+Click the moon/sun icon in the header to toggle between dark and light themes.
 
-Smooth transitions between phases
+---
 
-Tailwind CSS
+## 🌐 Online Mode (Coming Soon)
 
-Gradient backgrounds
+The online multiplayer mode is currently under development. Planned features include:
 
-Responsive layout
+- Real-time multiplayer gameplay
+- Voting system with player elimination
+- Host-controlled game rooms
+- Game timers and round management
+- Chat functionality
+- Player rankings and statistics
 
-Dark / Light theme support
+---
 
-HowToPlay Modal
+## 🔮 Future Improvements
 
-Desktop: icon-only button
+- 🌐 Online multiplayer (WebSockets / Firebase)
+- 🗳 Voting & elimination phase
+- ⏱ Timers and round limits
+- 🧑‍⚖️ Host / moderator role
+- 🌍 Multi-language support
+- 📊 Game statistics and leaderboards
+- 🎨 Additional themes and customization
+- 🔐 Secure game rooms with invite codes
 
-Mobile: button with text label
+---
 
+## 📖 Game Rules
 
-🌐 Online Mode (Coming Soon)
+1. **Setup**: Select 3–10 players and start the game
+2. **Word Reveal**: Each player sees their secret word (except the Imposter)
+3. **Discussion**: Players take turns describing their word without revealing it
+4. **Deduction**: Based on descriptions, players guess who the Imposter is
+5. **Voting**: Players vote to eliminate a suspect
+6. **Result**: The Imposter is revealed, and the game concludes
 
-The online multiplayer mode is planned and currently under development.
+---
 
-Planned features:
+## 🤝 Contributing
 
-Real-time multiplayer
+Contributions are welcome! To contribute:
 
-Voting system
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-Host-controlled game rooms
+---
 
-Timers and rounds
+## 📄 License
 
-🔮 Future Improvements
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
-🌐 Online multiplayer (WebSockets / Firebase)
+You are free to use, modify, and distribute this project, provided you include the license notice.
 
-🗳 Voting & elimination phase
+---
 
-⏱ Timers and rounds
+## 👨‍💻 Author
 
-🧑‍⚖️ Host / moderator role
-
-🌍 Multi-language support
-
-📊 Game statistics
-
-👨‍💻 Author
-
-Chikuso
+**Chikuso**  
 Software Engineer / IT Student
 
 This project was built to practice:
+- Modern React patterns and hooks
+- Next.js App Router and file-based routing
+- State management with Context API & Reducers
+- UI animation and microinteractions
+- Responsive web design
+- TypeScript for type safety
 
-Modern React patterns
+---
 
-Next.js App Router
+## 📞 Support
 
-State management with Context & Reducer
+If you encounter any issues or have suggestions, please:
+- Open an [Issue](https://github.com/your-username/word-imposter/issues)
+- Start a [Discussion](https://github.com/your-username/word-imposter/discussions)
 
-UI animation and UX design
+---
 
-📄 License
+## 🙏 Acknowledgments
 
-This project is licensed under the MIT License.
+- Inspired by the social deduction game *Among Us*
+- Built with amazing open-source tools and libraries
+- Thanks to all contributors and testers!
 
-Feel free to use, modify, and share it.
+---
+
+**Made with ❤️ by Chikuso**
