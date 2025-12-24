@@ -77,3 +77,125 @@ word-imposter/
 ├── next.config.ts
 ├── package.json
 └── README.md
+
+
+## ⚙️ Getting Started (Local Development)
+
+Follow these steps to run the project locally.
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/word-imposter.git
+cd word-imposter
+
+### 2️⃣ Install dependencies
+```bash
+npm install
+
+### 3️⃣ Start the development server
+```bash
+npm run dev
+
+Open your browser and visit:
+```bash
+http://localhost:3000
+
+### 3️⃣ Start the development server
+```bash
+npm run dev
+
+
+🧠 Game Logic Overview
+
+assignRoles.ts
+Randomly assigns one Imposter and normal players.
+
+getRandomWord.ts
+Selects a random word from the word list.
+
+GameContext + Reducer
+Manages global game state and phases:
+
+SETUP
+
+SHOW_WORD
+
+PLAY
+
+ShowWordScreen
+Shows the secret word privately to each player.
+
+
+🎨 UI & Animations
+
+Framer Motion
+
+Modal open / close animations
+
+Hover & tap effects
+
+Smooth transitions between phases
+
+Tailwind CSS
+
+Gradient backgrounds
+
+Responsive layout
+
+Dark / Light theme support
+
+HowToPlay Modal
+
+Desktop: icon-only button
+
+Mobile: button with text label
+
+
+🌐 Online Mode (Coming Soon)
+
+The online multiplayer mode is planned and currently under development.
+
+Planned features:
+
+Real-time multiplayer
+
+Voting system
+
+Host-controlled game rooms
+
+Timers and rounds
+
+🔮 Future Improvements
+
+🌐 Online multiplayer (WebSockets / Firebase)
+
+🗳 Voting & elimination phase
+
+⏱ Timers and rounds
+
+🧑‍⚖️ Host / moderator role
+
+🌍 Multi-language support
+
+📊 Game statistics
+
+👨‍💻 Author
+
+Chikuso
+Software Engineer / IT Student
+
+This project was built to practice:
+
+Modern React patterns
+
+Next.js App Router
+
+State management with Context & Reducer
+
+UI animation and UX design
+
+📄 License
+
+This project is licensed under the MIT License.
+
+Feel free to use, modify, and share it.
