@@ -1,39 +1,41 @@
 # 🎭 Word Imposter
 
-**Word Imposter** is a fun social word game inspired by *Among Us*.  
+**Word Imposter** is a fun social word game inspired by _Among Us_.  
 Each player receives a secret word — except one player, the **Imposter**, who gets a different word (or none at all).
 
 Discuss, observe carefully, and figure out who the Imposter is!
 
-
+![Game Demo](./screenshots/word-imposter.png)
 
 ---
 
 ## 🚀 Features
 
 ### 🎮 Game Modes
-- **Local Mode** – Play on a single device by passing it around
-- **Online Mode** – *(Planned for future development)*
+
+-   **Local Mode** – Play on a single device by passing it around
+-   **Online Mode** – _(Planned for future development)_
 
 ### ✨ Highlights
-- 👥 Supports **3–10 players**
-- 🎯 Automatic role assignment (Imposter / Player)
-- 🎲 Random word selection
-- 🧠 Turn-based gameplay
-- 🌙 Dark / Light mode toggle
-- 📱 Fully responsive (mobile-friendly)
-- ✨ Smooth animations with **Framer Motion**
+
+-   👥 Supports **3–10 players**
+-   🎯 Automatic role assignment (Imposter / Player)
+-   🎲 Random word selection
+-   🧠 Turn-based gameplay
+-   🌙 Dark / Light mode toggle
+-   📱 Fully responsive (mobile-friendly)
+-   ✨ Smooth animations with **Framer Motion**
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Next.js 14 (App Router)** – React framework with server-side rendering
-- **TypeScript** – Type-safe development
-- **Tailwind CSS** – Utility-first styling
-- **Framer Motion** – Smooth animations and transitions
-- **React Context API + Reducer** – State management
-- **shadcn/ui** – High-quality UI components
+-   **Next.js 14 (App Router)** – React framework with server-side rendering
+-   **TypeScript** – Type-safe development
+-   **Tailwind CSS** – Utility-first styling
+-   **Framer Motion** – Smooth animations and transitions
+-   **React Context API + Reducer** – State management
+-   **shadcn/ui** – High-quality UI components
 
 ---
 
@@ -87,32 +89,38 @@ word-imposter/
 ## ⚙️ Getting Started
 
 ### Prerequisites
-- Node.js 16+ and npm (or yarn/pnpm)
+
+-   Node.js 16+ and npm (or yarn/pnpm)
 
 ### Installation
 
 **1. Clone the repository**
+
 ```bash
 git clone https://github.com/your-username/word-imposter.git
 cd word-imposter
 ```
 
 **2. Install dependencies**
+
 ```bash
 npm install
 ```
 
 **3. Start the development server**
+
 ```bash
 npm run dev
 ```
 
 Open your browser and visit:
+
 ```
 http://localhost:3000
 ```
 
 ### Build for Production
+
 ```bash
 npm run build
 npm run start
@@ -132,37 +140,44 @@ npm run start
 ### Core Game Logic
 
 **assignRoles.ts**
-- Randomly selects one player as the Imposter
-- Assigns the remaining players as regular Players
+
+-   Randomly selects one player as the Imposter
+-   Assigns the remaining players as regular Players
 
 **getRandomWord.ts**
-- Selects a random word from the word list
-- Imposter may receive a different word or no word at all
+
+-   Selects a random word from the word list
+-   Imposter may receive a different word or no word at all
 
 **GameContext + Reducer**
-- Manages global game state and phase transitions
-- Handles player turn management
-- Stores game configuration and results
+
+-   Manages global game state and phase transitions
+-   Handles player turn management
+-   Stores game configuration and results
 
 **ShowWordScreen**
-- Displays the secret word to each player individually
-- Ensures privacy with clear handoff between turns
+
+-   Displays the secret word to each player individually
+-   Ensures privacy with clear handoff between turns
 
 ---
 
 ## 🎨 UI & Animations
 
 ### Framer Motion
-- Smooth modal open/close animations
-- Interactive hover and tap effects
-- Elegant transitions between game phases
+
+-   Smooth modal open/close animations
+-   Interactive hover and tap effects
+-   Elegant transitions between game phases
 
 ### Tailwind CSS
-- Responsive design (mobile-first)
-- Gradient backgrounds for visual appeal
-- Dark/Light theme support with theme toggle
+
+-   Responsive design (mobile-first)
+-   Gradient backgrounds for visual appeal
+-   Dark/Light theme support with theme toggle
 
 ### Dark Mode
+
 Click the moon/sun icon in the header to toggle between dark and light themes.
 
 ---
@@ -171,25 +186,25 @@ Click the moon/sun icon in the header to toggle between dark and light themes.
 
 The online multiplayer mode is currently under development. Planned features include:
 
-- Real-time multiplayer gameplay
-- Voting system with player elimination
-- Host-controlled game rooms
-- Game timers and round management
-- Chat functionality
-- Player rankings and statistics
+-   Real-time multiplayer gameplay
+-   Voting system with player elimination
+-   Host-controlled game rooms
+-   Game timers and round management
+-   Chat functionality
+-   Player rankings and statistics
 
 ---
 
 ## 🔮 Future Improvements
 
-- 🌐 Online multiplayer (WebSockets / Firebase)
-- 🗳 Voting & elimination phase
-- ⏱ Timers and round limits
-- 🧑‍⚖️ Host / moderator role
-- 🌍 Multi-language support
-- 📊 Game statistics and leaderboards
-- 🎨 Additional themes and customization
-- 🔐 Secure game rooms with invite codes
+-   🌐 Online multiplayer (WebSockets / Firebase)
+-   🗳 Voting & elimination phase
+-   ⏱ Timers and round limits
+-   🧑‍⚖️ Host / moderator role
+-   🌍 Multi-language support
+-   📊 Game statistics and leaderboards
+-   🎨 Additional themes and customization
+-   🔐 Secure game rooms with invite codes
 
 ---
 
@@ -230,28 +245,30 @@ You are free to use, modify, and distribute this project, provided you include t
 Software Engineer / IT Student
 
 This project was built to practice:
-- Modern React patterns and hooks
-- Next.js App Router and file-based routing
-- State management with Context API & Reducers
-- UI animation and microinteractions
-- Responsive web design
-- TypeScript for type safety
+
+-   Modern React patterns and hooks
+-   Next.js App Router and file-based routing
+-   State management with Context API & Reducers
+-   UI animation and microinteractions
+-   Responsive web design
+-   TypeScript for type safety
 
 ---
 
 ## 📞 Support
 
 If you encounter any issues or have suggestions, please:
-- Open an [Issue](https://github.com/your-username/word-imposter/issues)
-- Start a [Discussion](https://github.com/your-username/word-imposter/discussions)
+
+-   Open an [Issue](https://github.com/your-username/word-imposter/issues)
+-   Start a [Discussion](https://github.com/your-username/word-imposter/discussions)
 
 ---
 
 ## 🙏 Acknowledgments
 
-- Inspired by the social deduction game *Among Us*
-- Built with amazing open-source tools and libraries
-- Thanks to all contributors and testers!
+-   Inspired by the social deduction game _Among Us_
+-   Built with amazing open-source tools and libraries
+-   Thanks to all contributors and testers!
 
 ---
 
