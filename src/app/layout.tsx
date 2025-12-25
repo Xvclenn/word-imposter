@@ -13,7 +13,6 @@ const balsamiq = Balsamiq_Sans({
 export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en" className={balsamiq.className}>
-            <meta name="theme-color" content="#f59e0b" />
             <head>
                 <title>Word Imposter</title>
             </head>
