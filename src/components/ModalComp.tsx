@@ -66,7 +66,7 @@ export function HowToPlayModal() {
                         transition={{ duration: 0.3 }}
                     >
                         <div
-                            className="bg-white border border-amber-400 rounded-xl shadow-lg w-full sm:min-w-50 md:min-w-50 max-w-3xl p-6 relative"
+                            className="bg-white border border-amber-400 rounded-xl shadow-lg w-full sm:min-w-30 md:min-w-50 max-w-3xl p-6 relative"
                             onClick={(e) => e.stopPropagation()} // content дээр дарахад хаахгүй
                         >
                             {/* Close button */}
@@ -78,10 +78,10 @@ export function HowToPlayModal() {
                             </button>
 
                             {/* Modal content */}
-                            <h2 className="text-4xl font-bold mb-8 text-center">
+                            <h2 className="text-2xl sm:text-4xl text-left font-bold mb-8 sm:text-center pl-5 sm:p-0">
                                 🎯 Тоглоомын тухай
                             </h2>
-                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 p-5 h-100 overflow-x-hidden sm:max-h-70">
                                 {cards.map((card, index) => (
                                     <motion.div
                                         key={index}
