@@ -1,4 +1,4 @@
-"use client"; // ⚠️ client annotation зөвхөн client component-д хэрэгтэй
+"use client";
 import { Balsamiq_Sans } from "next/font/google";
 import { ReactNode } from "react";
 import { GameProvider } from "@/context/GameContext";
@@ -6,13 +6,14 @@ import "./globals.css";
 import { Footer } from "@/components/Footer";
 
 const balsamiq = Balsamiq_Sans({
-    subsets: ["latin"], // Монгол үсэг ашиглахгүй бол latin хангалттай
+    subsets: ["latin"],
     weight: ["400", "700"],
 });
 
 export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en" className={balsamiq.className}>
+            <meta name="theme-color" content="#f59e0b" />
             <head>
                 <title>Word Imposter</title>
             </head>

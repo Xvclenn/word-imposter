@@ -13,7 +13,7 @@ export default function LocalGamePage() {
     const { state } = useGame();
 
     return (
-        <main className="h-screen relative bg-linear-to-r from-amber-400 to-red-400 flex flex-col items-center justify-center p-6">
+        <main className="h-screen bg-linear-to-r from-amber-400 to-red-400 flex flex-col items-center justify-center p-6">
             <motion.div
                 className="border rounded-xl bg-accent-foreground shadow-lg w-full min-h-80 max-w-120 relative"
                 initial={{ opacity: 0, y: 20 }}
