@@ -81,7 +81,7 @@ export function HowToPlayModal() {
                             <h2 className="text-2xl sm:text-4xl text-left font-bold mb-8 sm:text-center pl-5 sm:p-0">
                                 🎯 Тоглоомын тухай
                             </h2>
-                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 p-5 h-100 overflow-x-hidden sm:max-h-70">
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 p-5 h-100 overflow-x-hidden sm:overflow-hidden sm:max-h-70">
                                 {cards.map((card, index) => (
                                     <motion.div
                                         key={index}
